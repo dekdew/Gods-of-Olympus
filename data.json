@@ -1,0 +1,43 @@
+{
+    "zeus": {
+        "greekName": "Zeus",
+        "romanName": "Jupiter",
+        "img": "img/zeus.png",
+        "info": "",
+        "symbols": [],
+        "animals": [],
+        "plants": [],
+        "power": "",
+        "link": [
+            {
+                "name": "",
+                "img": ""
+            },
+            {
+                "name": "",
+                "img": ""
+            }
+        ]
+    },
+
+    "hera": {
+        "greekName": "Hera",
+        "romanName": "Juno",
+        "img": "img/hera.png",
+        "info": "",
+        "symbols": [],
+        "animals": [],
+        "plants": [],
+        "power": "",
+        "link": [
+            {
+                "name": "",
+                "img": ""
+            },
+            {
+                "name": "",
+                "img": ""
+            }
+        ]
+    }
+}
