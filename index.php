@@ -35,9 +35,6 @@
     </form>
   </section>
 
-  <!-- <section id="info">
-  </section> -->
-
 </body>
 
 </html>
