@@ -12,3 +12,7 @@ xmlhttp.send();
 function myFunction(gods) {
     console.log(gods);
 }
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
