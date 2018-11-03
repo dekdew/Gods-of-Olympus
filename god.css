@@ -5,43 +5,39 @@ body {
   color: #fff;
 }
 
-#header {
-  background-image: url('img/header.jpg');
+#info {
+  background-image: url('img/godHeader.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding: 0 40px;
+  background-position: left;
+	height: 100vh;
+	padding: 0 40px;
+}
+
+.message {
   position: relative;
-  height: 100vh;
+}
+
+.profile {
+	height: 100vh;
+  width: 30vw;
+  display: inline-block;
+	background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.info {
+	width: 70vw;
 }
 
 #black-ov {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #000000de, #00000029);
+  background: linear-gradient(to left, #492c4a 30%, rgba(255, 255, 255, 0) 500%);
   left: 0;
   top: 0;
-}
-
-#header-message {
-  position: relative;
-  padding: 18em 0;
-}
-
-#header-message h1 {
-  font-family: 'Kanit', sans-serif;
-}
-
-#header-message>h1 {
-  font-size: 6em;
-  margin-bottom: 15px;
-  ;
-}
-
-#header-message>h2 {
-  font-weight: 300;
-  margin-bottom: 1em;
 }
 
 #gods p {
@@ -60,7 +56,6 @@ button:hover p {
 
 ul {
   width: 100vw;
-  position: absolute;
   bottom: 0;
 }
 
