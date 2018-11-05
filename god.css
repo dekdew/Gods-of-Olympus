@@ -5,30 +5,43 @@ body {
   color: #fff;
 }
 
+table {
+  position: relative;
+  height: 100%;
+}
+
+#data {
+  position: relative;
+  padding: 18em 0;
+}
+
+#data h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 6em;
+  margin-bottom: 15px;
+}
+
+#data h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#img {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 35vw;
+}
+#data {
+  width: 65vw;
+}
+
 #info {
   background-image: url('img/godHeader.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 	height: 100vh;
-	padding: 0 40px;
-}
-
-.message {
-  position: relative;
-}
-
-.profile {
-	height: 100vh;
-  width: 30vw;
-  display: inline-block;
-	background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-}
-
-.info {
-	width: 70vw;
 }
 
 #black-ov {
@@ -41,16 +54,15 @@ body {
 }
 
 #gods p {
-  color: #fff;
+  color: #f3db71;
   font-family: 'Athiti', sans-serif;
-  opacity: 0;
   font-size: 25px;
-  margin-top: -15px;
+  margin-top: 0;
   transition: all .3s;
 }
 
 button:hover p {
-  opacity: 1 !important;
+  color: #fff !important;
   transform: translateY(-40px);
 }
 

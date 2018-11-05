@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<section id="info">
+	<!-- <section id="info">
 		<div id="black-ov"></div>
 		<div class="message">
 			<div class="profile" style="background-image: url('<?php echo $data->$god->img ;?>');">
@@ -31,6 +31,22 @@
 				</h1>
 			</div>
 		</div>
+	</section> -->
+	
+	<section id="info">
+		<div id="black-ov"></div>
+		<table>
+			<tr>
+				<td id="img" style="background-image: url('<?php echo $data->$god->img ;?>');">
+				</td>
+				<td id="data">
+					<div id="name">
+						<h1><?php echo $data->$god->greekName; ?></h1>
+						<h2><?php echo $data->$god->romanName; ?></h2>
+					</div>
+				</td>
+			</tr>
+		</table>
 	</section>
 
 	<section id="gods">
