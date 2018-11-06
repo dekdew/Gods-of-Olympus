@@ -5,10 +5,19 @@
 	<meta charset="UTF-8">
 	<title>เทพเจ้าแห่งโอลิมปัส</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="nav.css">
 	<link href="https://fonts.googleapis.com/css?family=Athiti|Bai+Jamjuree|Kanit" rel="stylesheet">
 </head>
 
 <body>
+
+	<nav>
+		<ul>
+			<li><a href="#api">API</a></li>
+			<li><a href="#home">HOME</a></li>
+		</ul>
+	</nav>
+
 	<section id="header">
 		<div id="black-ov"></div>
 		<div id="header-message">
