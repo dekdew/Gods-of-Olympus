@@ -20,18 +20,6 @@
 </head>
 
 <body>
-	<!-- <section id="info">
-		<div id="black-ov"></div>
-		<div class="message">
-			<div class="profile" style="background-image: url('<?php echo $data->$god->img ;?>');">
-			</div>
-			<div class="info">
-				<h1>
-				<?php echo $data->$god->greekName ;?>
-				</h1>
-			</div>
-		</div>
-	</section> -->
 	
 	<section id="info">
 		<div id="black-ov"></div>
