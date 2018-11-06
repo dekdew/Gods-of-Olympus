@@ -1,0 +1,33 @@
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 3000;
+    width: 100vw;
+    font-family: 'Kanit', sans-serif;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    color: black;
+}
