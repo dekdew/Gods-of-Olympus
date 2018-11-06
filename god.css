@@ -12,7 +12,7 @@ table {
 
 #data {
   position: relative;
-  padding: 18em 0;
+  padding-top: 10vh;
 }
 
 #data h1 {
@@ -28,7 +28,7 @@ table {
 
 #img {
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 40vh;
   background-position: center;
   width: 35vw;
 }
@@ -41,7 +41,7 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-	height: 100vh;
+  height: 100vh;
 }
 
 #black-ov {
