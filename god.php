@@ -14,12 +14,20 @@
 		<?php echo $data->$god->greekName; ?>
 	</title>
 	<link rel="stylesheet" href="god.css">
+	<link rel="stylesheet" href="nav.css">
 	<link href="https://fonts.googleapis.com/css?family=Athiti|Bai+Jamjuree|Kanit" rel="stylesheet">
 </head>
 
 </head>
 
 <body>
+
+	<nav>
+		<ul>
+			<li><a href="#api">API</a></li>
+			<li><a href="#home">HOME</a></li>
+		</ul>
+	</nav>
 	
 	<section id="info">
 		<div id="black-ov"></div>
