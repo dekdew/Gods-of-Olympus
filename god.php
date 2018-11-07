@@ -24,7 +24,7 @@
 
 	<nav>
 		<ul>
-			<li><a href="map.php">API</a></li>
+			<li><a href="map.html">API</a></li>
 			<li><a href="index.php">HOME</a></li>
 		</ul>
 	</nav>
