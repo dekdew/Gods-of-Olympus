@@ -28,7 +28,7 @@
 			<li><a href="#home">HOME</a></li>
 		</ul>
 	</nav>
-	
+
 	<section id="info">
 		<div id="black-ov"></div>
 		<table>
@@ -37,9 +37,26 @@
 				</td>
 				<td id="data">
 					<div id="name">
-						<h1><?php echo $data->$god->greekName; ?></h1>
-						<h2><?php echo $data->$god->romanName; ?></h2>
+						<h1>
+							<?php echo $data->$god->greekName; ?>
+						</h1>
+						<h2>
+							<?php echo $data->$god->romanName; ?>
+						</h2>
 					</div>
+					<table id="ability">
+						<tr>
+							<td id="symbol">
+								<img src="img/icons/symbol.svg">
+							</td>
+							<td id="power">
+								<img src="img/icons/power.svg">
+							</td>
+							<td id="animal">
+								<img src="img/icons/animal.svg">
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 		</table>
