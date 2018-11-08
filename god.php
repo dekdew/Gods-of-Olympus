@@ -54,19 +54,19 @@
 					<table id="ability">
 						<tr>
 							<td id="symbol">
-								<img src="img/icons/symbol.svg">
+								<img src="img/icons/symbol.png">
 								<p>
 									<?php echo $symbol[0]; ?>
 								</p>
 							</td>
 							<td id="power">
-								<img src="img/icons/power.svg">
+								<img src="img/icons/power.png">
 								<p>
 									<?php echo $power[0]; ?>
 								</p>
 							</td>
 							<td id="animal">
-								<img src="img/icons/animal.svg">
+								<img src="img/icons/animal.png">
 								<p>
 									<?php echo $animal[0]; ?>
 								</p>
