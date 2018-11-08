@@ -2,7 +2,14 @@
     $json = file_get_contents('data.json');
     $data = json_decode($json);
 
-    $god = $_POST["god"];
+	$god = $_POST["god"];
+	$greekName = $data->$god->greekName;
+	$romanName = $data->$god->romanName;
+	$img = $data->$god->img;
+	$symbol = $data->$god->symbols;
+	$animal = $data->$god->animals;
+	$power = $data->$god->power;
+	$info = $data->$god->info;
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +18,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>
-		<?php echo $data->$god->greekName; ?>
+		<?php echo $greekName; ?>
 	</title>
 	<link rel="stylesheet" href="god.css">
 	<link rel="stylesheet" href="nav.css">
@@ -33,27 +40,30 @@
 		<div id="black-ov"></div>
 		<table>
 			<tr>
-				<td id="img" style="background-image: url('<?php echo $data->$god->img ;?>');">
+				<td id="img" style="background-image: url('<?php echo $img ;?>');">
 				</td>
 				<td id="data">
 					<div id="name">
 						<h1>
-							<?php echo $data->$god->greekName; ?>
+							<?php echo $greekName; ?>
 						</h1>
 						<h2>
-							<?php echo $data->$god->romanName; ?>
+							<?php echo $romanName; ?>
 						</h2>
 					</div>
 					<table id="ability">
 						<tr>
 							<td id="symbol">
 								<img src="img/icons/symbol.svg">
+								<p><?php echo $symbol[0]; ?></p>
 							</td>
 							<td id="power">
 								<img src="img/icons/power.svg">
+								<p><?php echo $power[0]; ?></p>
 							</td>
 							<td id="animal">
 								<img src="img/icons/animal.svg">
+								<p><?php echo $animal[0]; ?></p>
 							</td>
 						</tr>
 					</table>

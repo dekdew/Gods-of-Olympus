@@ -16,13 +16,17 @@ table {
   text-align: center;
 }
 
+#ability p {
+  margin-top: 10px;
+}
+
 #ability td {
   width: 33.33%;
   height: auto;
 }
 
 #ability img {
-  width: 4vw;
+  width: 5vw;
 }
 
 #data {
