@@ -23,3 +23,105 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     color: #fff;
 }
+
+section{
+    float: left;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+}
+
+#sec-wrapper1{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#sec-wrapper2{
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+#icon-wrapper{
+width:100%;
+float:left;
+height:300px;
+}
+
+.icons {
+width:25%;
+float:left;
+position:relative;
+}
+.icons2 {
+width:25%;
+float:left;
+position:relative;
+margin-left:25%;
+}
+.icons3 {
+width:25%;
+float:left;
+position:relative;
+margin-left:50%;
+}
+.icons4 {
+width:25%;
+float:left;
+position:relative;
+margin-left:75%;
+}
+
+.icon-slide-container{
+height:250px;
+overflow:hidden;
+text-align: left;
+position: absolute;
+float: left;
+width: 250px;
+left: 50%;
+margin-left: -125px;
+}
+
+.slide-icon{
+width:250px;
+height:auto;
+position:absolute;
+margin-top:-250px;
+-webkit-transition:.4s ease;
+-moz-transition:.4s ease;
+-ms-transition:.4s ease;
+-o-transition:.4s ease;
+transition:.4 ease;
+}
+
+.slide-icon:hover{
+position:absolute;
+margin-top:0;
+}
+
+@media only screen and (max-width: 1300px) {
+#icon-wrapper{
+    width:100%;
+    float:left;
+    height:170px;
+}
+.icon-slide-container {
+    height: 200px;
+    overflow: hidden;
+    text-align: left;
+    position: absolute;
+    float: left;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+.slide-icon {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    margin-top: -200px;
+}
+}
+
