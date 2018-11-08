@@ -55,18 +55,33 @@
 						<tr>
 							<td id="symbol">
 								<img src="img/icons/symbol.svg">
-								<p><?php echo $symbol[0]; ?></p>
+								<p>
+									<?php echo $symbol[0]; ?>
+								</p>
 							</td>
 							<td id="power">
 								<img src="img/icons/power.svg">
-								<p><?php echo $power[0]; ?></p>
+								<p>
+									<?php echo $power[0]; ?>
+								</p>
 							</td>
 							<td id="animal">
 								<img src="img/icons/animal.svg">
-								<p><?php echo $animal[0]; ?></p>
+								<p>
+									<?php echo $animal[0]; ?>
+								</p>
 							</td>
 						</tr>
 					</table>
+					<div class="p">
+						<?php
+							foreach ($info as $p) {
+								echo "<p>&nbsp";
+								echo $p;
+								echo "</p><br>";
+							}
+						?>
+					</div>
 				</td>
 			</tr>
 		</table>
