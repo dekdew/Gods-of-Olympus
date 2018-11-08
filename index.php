@@ -13,7 +13,7 @@
 
 	<nav>
 		<ul>
-			<li><a href="map.html">API</a></li>
+			<li><a href="map.html">Map</a></li>
 			<li><a href="#home">HOME</a></li>
 		</ul>
 	</nav>
