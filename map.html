@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MAP</title>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0BqvqdLQO9o7yiqZ3aapKIlPLacqr6Ug&libraries=visualization&callback=initMap"></script>
+</head>
+
+<body>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+
+
+    <script type="text/javascript">
+
+        function initMap() {
+
+            var center = {
+                lat: 37.9715285,
+                lng: 23.7267166
+            };
+
+            // var marker = new google.maps.Marker({
+            //     position: center,
+            //     map: map
+            // });
+        
+
+        var locations = [
+            ['Temple of Artemis<br>\ วิหารอาร์เทมิส<br>\ <a href="https://goo.gl/maps/2CTM6Dyjees">Get Directions</a>', 37.9497392, 27.3640305],
+            ['Parthenon<br>\ วิหารพาร์เธนอน<br>\ <a href="https://goo.gl/maps/eqW9mUKhcUs">Get Directions</a>', 37.9715285, 23.7267166],
+            ['Temple of Zeus<br>\ วิหารโอลิมเปียนซุส<br>\ <a href="https://goo.gl/maps/qegBfimkdXm">Get Directions</a>', 37.9693, 23.7331],
+            ['Delphi Archaeological Museum<br>\ พิพิธภัณฑ์เดลฟี<br>\ <a href="https://goo.gl/maps/6Srky6z7rkS2">Get Directions</a>', 38.4803028, 22.4997992],
+            ['Temple of Poseidon<br>\ วิหารโพไซดอน<br>\ <a href="https://goo.gl/maps/ki9cwTB1r2D2">Get Directions</a>', 37.6501925, 24.024587],
+            ['Delphi<br>\ มหาวิหารเดลฟี<br>\ <a href="https://goo.gl/maps/1bmkjmrKtAw">Get Directions</a>', 38.4823868, 22.5009699],
+            ['Sanctuary of Aphrodite<br>\ วิหารอโฟร์ได<br>\ <a href="https://goo.gl/maps/eiMbMCbMD2t">Get Directions</a>', 34.7082499, 32.5739865],
+            ['Temple of Hephaestus<br>\ วิหารฮีเฟสตุส<br>\ <a href="https://goo.gl/maps/HhN1FjYyyDx">Get Directions</a>', 37.975595, 23.7214521]
+
+        ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 5,
+            center: center
+        });
+        var infowindow = new google.maps.InfoWindow({});
+        var marker, count;
+        for (count = 0; count < locations.length; count++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+                map: map,
+                title: locations[count][0]
+            });
+            google.maps.event.addListener(marker, 'click', (function (marker, count) {
+                return function () {
+                    infowindow.setContent(locations[count][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, count));
+
+        }
+
+        }
+
+    </script>
+</body>
+
+</html>
