@@ -10,6 +10,21 @@ table {
   height: 100%;
 }
 
+#ability {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#ability td {
+  width: 33.33%;
+  height: auto;
+}
+
+#ability img {
+  width: 4vw;
+}
+
 #data {
   position: relative;
   padding-top: 10vh;
